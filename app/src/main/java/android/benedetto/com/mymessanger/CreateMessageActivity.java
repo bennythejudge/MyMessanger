@@ -22,7 +22,9 @@ public class CreateMessageActivity extends Activity {
 
     public void onSendMessage(View view) {
         EditText msg = (EditText) findViewById(R.id.message);
-        Intent intent = new Intent(this, ReceiveMessageActivity.class);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "This is me sending a message");
         intent.putExtra(ReceiveMessageActivity.EXTRA_MESSAGE, msg.getText().toString());
         startActivity(intent);
     }
