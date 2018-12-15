@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">My Messanger</string>
-    <string name="hint">enter your message</string>
+    <string name="message">enter your message</string>
     <string name="send">Send message to next activity</string>
     <string name="chooser">Send message using...</string>
+    <string name="to">To</string>
 </resources>
